@@ -9,6 +9,8 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
+
+    ../../pkgs/hyprland
   ];
 
   nixpkgs = {
@@ -49,8 +51,6 @@
     home-manager.enable = true;
     git.enable = true;
   };
-
-  wayland.windowManager.hyprland.enable = true;
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
