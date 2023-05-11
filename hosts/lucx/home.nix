@@ -12,6 +12,7 @@
 
     ../../pkgs/hyprland
     ../../pkgs/waybar
+    ../../pkgs/dunst
   ];
 
   home = {
