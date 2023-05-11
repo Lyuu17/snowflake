@@ -32,7 +32,7 @@
       lucx = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; }; # Pass flake inputs to our config
         modules = [
-          ./nixos/configuration.nix
+          ./hosts/lucx/configuration.nix
         ];
       };
     };
@@ -43,7 +43,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           hyprland.homeManagerModules.default
-          ./home-manager/home.nix
+          ./hosts/lucx/home.nix
         ];
       };
     };
