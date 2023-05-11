@@ -1,9 +1,7 @@
 {...}: {
   wayland.windowManager.hyprland.extraConfig = ''
 
-    monitor = HDMI-A-1,1920x1080,5760x0,1 #right
-    monitor = DP-2,1920x1080,1920x0,1 #left
-    monitor = DP-3,1920x1080@144,3840x0,1 #middle
+    monitor = DP-1,1920x1080@60,0x0,1
 
     input {
 
