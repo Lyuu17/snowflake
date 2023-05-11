@@ -11,6 +11,7 @@
     # ./nvim.nix
 
     ../../pkgs/hyprland
+    ../../pkgs/waybar
   ];
 
   home = {
