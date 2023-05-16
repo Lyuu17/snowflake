@@ -49,6 +49,8 @@
       enable = true;
       layout = "es";
       xkbVariant = "";
+
+      displayManager.sddm.enable = true;
     };
 
     printing.enable = true;
