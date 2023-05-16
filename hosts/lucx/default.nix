@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
 
       ../../pkgs/hyprland
+      ../../pkgs/greetd
     ];
 
   # Bootloader.
