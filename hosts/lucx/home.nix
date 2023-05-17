@@ -11,6 +11,7 @@
     # ./nvim.nix
 
     ../../pkgs/hyprland/home.nix
+    ../../pkgs/eww/home.nix
   ];
 
   home = {
@@ -25,6 +26,12 @@
     home-manager.enable = true;
     git.enable = true;
     wezterm.enable = true;
+
+    eww-hyprland = {
+      enable = true;
+      package = pkgs.eww-wayland;
+      autoReload = false;
+    };
   };
 
   # Nicely reload system units when changing configs
