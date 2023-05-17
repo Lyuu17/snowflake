@@ -14,7 +14,7 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/aab6040d-e832-4e7b-a54a-43d4a6e6d5b3";
+    { device = "/dev/disk/by-uuid/45a4a07d-71aa-4525-be55-2232a20ce448";
       fsType = "ext4";
     };
 
@@ -28,4 +28,5 @@
   # networking.interfaces.enp1s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
